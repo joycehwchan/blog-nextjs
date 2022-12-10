@@ -22,3 +22,13 @@
   color: #fff;
   font-weight: 300;
 }
+
+@media screen and (max-width: 768px) {
+  .top h1 {
+    font-size: 1.8rem;
+  }
+
+  .top h3 {
+    font-size: .8rem;
+  }
+}

@@ -5,7 +5,7 @@ const Top = () => {
   return (
     <div className={styles.top}>
       <h1>Slice of Japan</h1>
-      <h3>A place to blog about your experiences in Japan</h3>
+      <h3>A place to share your unique experiences in Japan</h3>
     </div>
   )
 }

@@ -70,6 +70,10 @@
     padding: 2rem 0;
   }
 
+  .back {
+    padding-left: 32px;
+  }
+
   .coverPhoto {
     width: 100%;
   }
