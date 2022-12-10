@@ -1,9 +1,7 @@
 import Head from 'next/head'
-import styles from '../styles/BlogCard.module.css'
 import { GraphQLClient, gql } from 'graphql-request'
-import Link from 'next/link'
-
-// components
+import styles from '../styles/Home.module.css'
+import Top from '../components/Top'
 import BlogCard from '../components/BlogCard'
 
 const graphcms = new GraphQLClient('https://api-ap-northeast-1.hygraph.com/v2/clbhj6udh13cl01ur67pibwce/master')
@@ -50,14 +48,15 @@ export default function Home({posts}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Top/>
       <main className={styles.main}>
         {posts.map((post) => (
-          <BlogCard 
-            key={post.id} 
-            title={post.title} 
-            author={post.author} 
-            coverPhoto={post.coverPhoto} 
-            datePublished={post.datePublished} 
+          <BlogCard
+            key={post.id}
+            title={post.title}
+            author={post.author}
+            coverPhoto={post.coverPhoto}
+            datePublished={post.datePublished}
             slug={post.slug}
           />
         ))}

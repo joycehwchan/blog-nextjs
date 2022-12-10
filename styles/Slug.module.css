@@ -1,60 +1,93 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+.back {
+  font-size: .8rem;
+  text-transform: uppercase;
+  margin-bottom: 200px;
+  font-weight: 400;
+}
+
+.coverPhoto {
+  max-width: 1000px;
+  margin: 1.2rem auto 1rem;
+}
+
+.cover {
+  width: 100%;
+  height: 60vh;
+  margin: 0 auto;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.postBody {
+  padding-bottom: 4rem;
+}
+
 .title {
-    padding-top: 1rem;
-  }
-  
-  .title h2 {
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-  }
-  
-  .authdetails {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .authdetails img {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    margin-right: 1rem;
-    object-fit: cover;
-  }
-  
-  .authdetails h6 {
-    font-weight: 500;
-  }
-  
-  .authtext {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-  }
-  
-  .cover {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.title h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.authdetails {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.2rem 0 2rem;
+}
+
+.authdetails img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: cover;
+}
+
+.authdetails h6 {
+  font-weight: 300;
+}
+
+.authtext {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
     width: 100%;
-    height: 30vh;
-    object-fit: cover;
+    padding: 2rem 0;
   }
-  
-  .blog code {
-    font-size: 1.2rem;
-    background: rgb(55, 55, 55);
-    color: rgb(246, 246, 246);
-    display: block;
-    padding: 1rem;
-    margin: 2rem 0rem;
-    border-radius: 2rem;
+
+  .coverPhoto {
+    width: 100%;
   }
-  
-  @media screen and (max-width: 768px) {
-    .blog {
-      margin: 0rem 2rem;
-    }
-    .content {
-      width: 100%;
-    }
-    .content img {
-      width: 100%;
-    }
+
+  .cover {
+    height: 40vh;
+    border-radius: 0;
   }
+
+  .title {
+    padding: 1.2rem 0;
+  }
+
+  .title h2 {
+    font-size: 2rem;
+  }
+
+  .postBody {
+    padding: 0 2rem 4rem;
+  }
+}
