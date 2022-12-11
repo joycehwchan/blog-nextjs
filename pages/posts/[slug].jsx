@@ -2,6 +2,7 @@ import { GraphQLClient, gql } from "graphql-request";
 import Head from 'next/head'
 import styles from "../../styles/Slug.module.css";
 import Link from 'next/link'
+import moment from "moment";
 
 const graphcms = new GraphQLClient('https://api-ap-northeast-1.hygraph.com/v2/clbhj6udh13cl01ur67pibwce/master')
 
@@ -88,11 +89,12 @@ export default function BlogPost({ post }) {
             <img src={post.author.avatar.url} alt={post.author.name} />
             <div className={styles.authtext}>
               <h6>By {post.author.name} </h6>
-              <h6 className={styles.date}>
-                Published on: {post.datePublished}
-              </h6>
             </div>
           </div>
+
+          <h6 className={styles.date}>
+            Published on {moment(post.datePublished).format("MMMM d, YYYY")}
+          </h6>
 
           <div
             className={styles.content}
