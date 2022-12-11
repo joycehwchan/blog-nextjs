@@ -18,7 +18,7 @@ export default function BlogCard({title, author, coverPhoto, datePublished, slug
                         <img src={author.avatar.url} alt={author.name}/>
                         <div>
                           <h3>{author.name}</h3>
-                          <h3>Published on: {moment(datePublished).format("MMMM d, YYYY")}</h3>
+                          <h3>Published on: {moment(datePublished).format("MMMM D, YYYY")}</h3>
                         </div>
                     </div>
                 </div>

@@ -93,7 +93,7 @@ export default function BlogPost({ post }) {
           </div>
 
           <h6 className={styles.date}>
-            Published on {moment(post.datePublished).format("MMMM d, YYYY")}
+            Published on {moment(post.datePublished).format("MMMM D, YYYY")}
           </h6>
 
           <div
